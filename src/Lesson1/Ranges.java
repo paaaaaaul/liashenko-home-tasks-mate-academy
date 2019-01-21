@@ -41,7 +41,7 @@ public class Ranges {
         // каждый вводимый (в данном случае первый) элемент массива
         int prev = in.nextInt();
 
-        int cur = 0;
+        int cur;
         int count = 1;
         // сразу в начале добавляем открывающую скобку
         builder.append('[').append(prev);

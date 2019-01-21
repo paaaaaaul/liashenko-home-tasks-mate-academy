@@ -45,7 +45,7 @@ public class RestoreArray {
         int prev;
         int next;
 
-        for (int i = 0; i < size; i++) { // в цикле заполняем массив
+        for (int i = 0; i < size; i++) {
             monotoneArray[i] = scanner.nextInt();
         }
 
@@ -68,16 +68,17 @@ public class RestoreArray {
                 prev = monotoneArray[i - 1];
                 next = prev - monotoneArray[i - 1];
 
-
+                    // если число в массиве равно этому же числу (если отнять 2),
+                    // тогда последовательность возрастающая
                     if (prev == next + 2) {
-                        cur = prev + 1;
+                        cur = prev + 1; //возрастающая, к предыдущему числу (относиьтельно отрицатеьному) добавляем 1
 
                         monotoneArray[i] = cur;
 
                         System.out.print(" ");
                     } else {
-
-                        cur = prev - 1;
+                    // если наоборот, то убывающая
+                        cur = prev - 1; // и отнимаем 1
                         monotoneArray[i] = cur;
                         System.out.print(" ");
                     }
