@@ -1,4 +1,4 @@
-package Lesson2;
+package Lesson2.Shapes;
 
 /*
 2.6 Вам нужно написать программу содержащую три класса Triangle, Circle, Square,
@@ -8,4 +8,5 @@ package Lesson2;
 */
 
 public class Figures {
+
 }

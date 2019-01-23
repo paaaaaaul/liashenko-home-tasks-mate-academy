@@ -37,25 +37,21 @@ public class ArrayRotation {
     }
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
         Scanner kScanner = new Scanner(System.in);
 
         int size = scanner.nextInt(); // задаем размер массива
         int elToMove = kScanner.nextInt(); // задаем кол-во элементов, которые нуэно переместить
-
         int arr[] = new int[size]; // массив, кладем size, как размер массива
         int n = arr.length; // длина массива
 
         for (int i = 0; i < size; i++) { // в цикле заполняем массив
             arr[i] = scanner.nextInt();
         }
-
-        moveToEnd(arr, n, elToMove); //передаем параметры в метод, который будет переносить элементы массива
+        moveToEnd(arr, size, elToMove); //передаем параметры в метод, который будет переносить элементы массива
 
         for (int i = 0; i < n; ++i) {
             System.out.print(arr[i] + " "); //выводим результат в консоль
         }
-
     }
 }
